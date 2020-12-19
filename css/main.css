@@ -273,6 +273,44 @@ section{
 	-webkit-text-stroke-color: #fafafa;
 
 }
+
+#osso{
+	position: absolute;
+	top: 0;
+	
+	left: 0;
+	width: 100%;
+}
+#skye2{
+	position: absolute;
+	top: 150px;
+	right: 1px;
+	z-index: 2;
+}
+#quando{
+	position: absolute;
+	width: 65%;
+	left: 0;
+	padding-bottom: 150px;
+}
+#onde{
+	position: absolute;
+	width: 70%;
+	right: 0;
+	bottom: 5%;
+}
+#mapa{
+	position: absolute;
+	bottom: 211.9px;
+	right: 216px;
+	z-index: 2;
+	width: 243px;
+	height: 141.5px;
+}
+
+
+
+
 .footprint{
 	z-index: 0;
 	width: 25px;
@@ -297,6 +335,19 @@ section{
 	-webkit-animation-duration: 5s;
 	-webkit-animation-name: fadeOut;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes fadeIn {
 	0%{opacity: 0;}
 	50%{opacity: 1;}
