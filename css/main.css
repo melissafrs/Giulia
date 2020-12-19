@@ -270,7 +270,7 @@ section{
 
 	z-index: 2;
 	
-	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-width: thin;
 	-webkit-text-stroke-color: #fafafa;
 
 }
