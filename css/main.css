@@ -317,15 +317,6 @@ section{
 	animation: bounceMap 2s infinite;
 	
 }
-.data.clicada #quando::after{
-	display: none;
-	animation: none;
-	border: #000000 12px;
-}
-
-
-
-
 
 .footprint{
 	z-index: 0;
