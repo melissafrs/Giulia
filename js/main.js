@@ -1,6 +1,7 @@
 let burger = document.getElementById('burger'),
 	 nav    = document.getElementById('main-nav'),
-	 item = document.getElementById('itemMenu');
+	 item = document.getElementById('itemMenu'),
+	 quando = document.getElementById('data');
 
 burger.addEventListener('click', function(e){
 	this.classList.toggle('is-open');
@@ -11,6 +12,19 @@ item.addEventListener('click', function(e){
 	burger.classList.toggle('is-open');
 	nav.classList.toggle('is-open');
 });
+
+quando.addEventListener('click', function(e){
+	quando.classList.toggle('clicada');
+});
+
+function confirmar(url, msg){
+	
+    event.preventDefault();  
+    var resposta = confirm(msg);
+    if (resposta == true){
+        top.location.href = url;
+    }
+}    
 
 var NavWidth= 375;
 var NavHeight = 667;

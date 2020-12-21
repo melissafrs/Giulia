@@ -30,7 +30,7 @@
 
 /* Yellow band effect */
 .main-nav::before {
-	 content: '';
+	content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -277,7 +277,7 @@ section{
 #osso{
 	position: absolute;
 	top: 0;
-	
+	z-index: 1;
 	left: 0;
 	width: 100%;
 }
@@ -287,26 +287,42 @@ section{
 	right: 1px;
 	z-index: 2;
 }
+#calendario{
+	position: absolute;
+}
 #quando{
 	position: absolute;
 	width: 65%;
 	left: 0;
-	padding-bottom: 150px;
+	top: 50vw;
+	z-index: 1;
+	animation: bounce 2s infinite;
 }
+
 #onde{
 	position: absolute;
 	width: 70%;
 	right: 0;
 	bottom: 5%;
+	z-index: 1;
+	animation: bounce 2s infinite;
 }
 #mapa{
 	position: absolute;
-	bottom: 211.9px;
+	bottom: 208px;
 	right: 216px;
 	z-index: 2;
 	width: 243px;
 	height: 141.5px;
+	animation: bounceMap 2s infinite;
+	
 }
+.data.clicada #quando::after{
+	display: none;
+	animation: none;
+	border: #000000 12px;
+}
+
 
 
 
@@ -380,7 +396,6 @@ section{
 	30%{opacity: 1;}
 	100%{opacity: 0;}
 }
-
 @keyframes bounce{
     0%{
       opacity: 1;
@@ -394,6 +409,22 @@ section{
       opacity: 1;
       transform: scale(1) translate3d(0,0,0);
     }
+}
+@keyframes bounceMap{
+    0%{
+      opacity: 1;
+	  transform: scale(1) translate3d(0,0,0);
+	  
+    }
+    50%{
+      opacity: 1;
+	  transform: scale(1.07);
+	  bottom: 200px;
+    }
+    100%{
+      opacity: 1;
+	  transform: scale(1) translate3d(0,0,0);
+	}
 }
 
 @keyframes bounceIn{

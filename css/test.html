@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function confirmar(url, msg){
+    event.preventDefault();  
+    var resposta = confirm(msg);
+    if (resposta == true){
+        top.location.href = url;
+    }
+}    
+
+</script>
+</head>
+<body>
+   
+
+    <textarea id="comentario"></textarea>
+    
+    <a href="https://pt.stackoverflow.com/questions/87290/perguntar-se-o-usu%C3%A1rio-deseja-mesmo-sair-da-p%C3%A1gina"
+    onclick="confirmar('https://pt.stackoverflow.com/questions/87290/perguntar-se-o-usu%C3%A1rio-deseja-mesmo-sair-da-p%C3%A1gina', 'Vai sair?')">Sair da página</a>
+</html>
