@@ -296,26 +296,25 @@ section{
 	left: 0;
 	top: 50vw;
 	z-index: 1;
-	animation: bounce 2s infinite;
+	animation: pulse 2s infinite;
 }
 
 #onde{
 	position: absolute;
 	width: 70%;
-	right: 0;
+	right: 20px;
 	bottom: 5%;
 	z-index: 1;
-	animation: bounce 2s infinite;
+	animation: rotate 2s infinite;
 }
 #mapa{
 	position: absolute;
 	bottom: 208px;
-	right: 216px;
+	right: 236px;
 	z-index: 2;
 	width: 243px;
 	height: 141.5px;
-	animation: bounceMap 2s infinite;
-	
+	animation: pulseMap 2s infinite;
 }
 
 .footprint{
@@ -387,37 +386,49 @@ section{
 	30%{opacity: 1;}
 	100%{opacity: 0;}
 }
-@keyframes bounce{
+@keyframes pulse{
     0%{
       opacity: 1;
       transform: scale(1) translate3d(0,0,0);
     }
     50%{
       opacity: 1;
-      transform: scale(1.07);
+      transform: scale(1.04);
     }
     100%{
       opacity: 1;
       transform: scale(1) translate3d(0,0,0);
     }
-}
-@keyframes bounceMap{
-    0%{
-      opacity: 1;
-	  transform: scale(1) translate3d(0,0,0);
-	  
-    }
-    50%{
-      opacity: 1;
-	  transform: scale(1.07);
-	  bottom: 200px;
-    }
-    100%{
-      opacity: 1;
-	  transform: scale(1) translate3d(0,0,0);
-	}
 }
 
+@keyframes pulseMap{
+    0%{
+      opacity: 1;
+      transform: scale(0.9) translate3d(0,0,0);
+    }
+    50%{
+      opacity: 1;
+      transform: rotate(3deg) scale(0.94);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(0.9) translate3d(0,0,0);
+    }
+}
+@keyframes rotate{
+    0%{
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+    50%{
+      opacity: 1;
+      transform: rotate(3deg);
+    }
+    100%{
+      opacity: 1;
+      transform: rotate(0deg);
+    }
+}
 @keyframes bounceIn{
     0%{
       opacity: 0;
