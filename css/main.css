@@ -355,7 +355,7 @@ section{
 
 @media (min-aspect-ratio: 135/256) {
 	#mapa{
-		bottom: 10.8%;
+		bottom: 11%;
 	}
 }
 @keyframes fadeIn {
