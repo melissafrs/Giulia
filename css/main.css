@@ -308,9 +308,9 @@ section{
 	animation: rotate 2s infinite;
 }
 #mapa{
-	position: relative;
-	bottom: -60.7vw;
-	right: -13vw;
+	position: absolute;
+	bottom: 11.8%;
+	right: 236px;
 	z-index: 2;
 	width: 243px;
 	height: 141.5px;
