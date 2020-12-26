@@ -309,7 +309,7 @@ section{
 }
 #mapa{
 	position: absolute;
-	bottom: 11.8%;
+	bottom: 10.7%;
 	right: 236px;
 	z-index: 2;
 	width: 243px;
@@ -350,14 +350,172 @@ section{
 
 
 
-
+@media (min-aspect-ratio: 1/2) {
+	#mapa{
+		bottom: 11.3%;
+	}
+}
 
 
 @media (min-aspect-ratio: 135/256) {
 	#mapa{
-		bottom: 11%;
+		bottom: 11.53%;
 	}
 }
+@media (min-aspect-ratio: 9/16) {
+	#mapa{
+		bottom: 12.4%;
+	}
+}
+
+@media (min-aspect-ratio: 3/5) {
+	#quando{
+		width: 60%;
+	}
+	#onde{
+        width: 65%;
+	}
+	#mapa{
+		width: 230.85px;
+	    height: 134.425px;
+		bottom: 12.2%;
+		right: 215px;
+	}
+	#skye1{
+		width: 55%;
+    }
+    
+}
+@media (min-aspect-ratio: 2/3) {
+	#quando{
+		width: 55%;
+	}
+	#onde{
+        width: 60%;
+	}
+	#mapa{
+		width: 219.3075px;
+	    height: 127.70px;
+		bottom: 11.9%;
+		right: 200px;
+	}
+	#skye1{
+		width: 50%;
+    }
+}
+@media (min-aspect-ratio: 1000/1414) {
+    #quando{
+		width: 52%;
+	}
+	#onde{
+        width: 57%;
+	}
+	#mapa{
+		width: 212.43px;
+	    height: 123.19px;
+		bottom: 11.9%;
+		right: 187px;
+	}
+	#skye1{
+		width: 50%;
+    }
+}
+@media (min-aspect-ratio: 4/5) {
+    #escudo2{
+		width:55%;
+	}
+	#convidado{
+		font-size: 12vw;
+	}
+    #quando{
+		width: 45%;
+	}
+	#osso{
+		width: 90%;
+	}
+	#onde{
+        width: 50%;
+	}
+	#mapa{
+		width: 180px;
+	    height: 110px;
+		bottom: 11.9%;
+		right: 167px;
+	}
+	#skye1{
+		width: 50%;
+    }
+}
+@media (min-aspect-ratio: 5/6) {
+	#escudo2{
+		width:50%;
+		padding-bottom: 310px;
+	}
+	#skye1{
+		width: 45%;
+    }
+    #convidado{
+    	padding-bottom: 170px;
+    }
+   #mapa{
+		width: 207px;
+	    height: 126.5px;
+		bottom: 12.8%;
+		right: 185px;
+	}
+	#quando{
+		left: 7vw;
+	    top: 40vw;
+	}
+}
+
+@media (min-aspect-ratio: 1/1) {
+    #mapa{
+		width: 207px;
+	    height: 126.5px;
+		bottom: 13.8%;
+		right: 205px;
+	}
+}
+
+@media (min-aspect-ratio: 6/5) {
+   
+}
+@media (min-aspect-ratio: 5/4) {
+    
+}
+@media (min-aspect-ratio: 4/3) {
+    
+}
+@media (min-aspect-ratio: 1414/1000) {
+    
+}
+@media (min-aspect-ratio: 3/2) {
+    
+}
+@media (min-aspect-ratio: 5/3) {
+   
+}
+@media (min-aspect-ratio: 1681/1000) {
+    
+}
+@media (min-aspect-ratio: 16/9) {
+    
+}
+@media (min-aspect-ratio: 256/135) {
+   
+}
+@media (min-aspect-ratio: 2/1) {
+    
+}
+
+
+
+
+
+
+
+
 @keyframes fadeIn {
 	0%{opacity: 0;}
 	50%{opacity: 1;}
