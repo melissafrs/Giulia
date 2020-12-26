@@ -348,7 +348,11 @@ section{
 
 
 
-
+@media (min-aspect-ratio: 411/823) {
+	#mapa{
+		bottom: 11.3%;
+	}
+}
 
 @media (min-aspect-ratio: 1/2) {
 	#mapa{
@@ -459,9 +463,9 @@ section{
     }
    #mapa{
 		width: 207px;
-	    height: 126.5px;
-		bottom: 12.8%;
-		right: 185px;
+		height: 126.5px;
+		bottom: 13.5%;
+		right: 203px;
 	}
 	#quando{
 		left: 7vw;
