@@ -355,9 +355,7 @@ section{
 	align-self: center;
 	width: 40%;
 }
-.form.clicado{
-	display: none;
-}
+
 @media (min-aspect-ratio: 411/823) {
 	#mapa{
 		bottom: 11.3%;
