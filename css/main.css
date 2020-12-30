@@ -348,6 +348,10 @@ section{
 	align-self: center;
 	width: 70%;
 }
+#rsvp{
+	align-items: center;
+}
+
 #responda{
 	position: absolute;
 	bottom: 0;
@@ -355,9 +359,17 @@ section{
 	align-self: center;
 	width: 40%;
 }
-.form.clicado{
+.ia.out{
+	display: none
+}
+.cp.clicado .form{
+	display: block;
+}
+.form{
 	display: none;
 }
+
+
 @media (min-aspect-ratio: 411/823) {
 	#mapa{
 		bottom: 11.3%;

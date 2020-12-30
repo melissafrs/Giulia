@@ -1,8 +1,8 @@
 let burger = document.getElementById('burger'),
 	 nav    = document.getElementById('main-nav'),
 	 item = document.getElementById('itemMenu'),
-	 enviar = document.getElementById('enviar'),
-	 from = document.getElementById('form');
+	 cp = document.getElementById('cp'),
+	 ia = document.getElementById('ia');
 
 burger.addEventListener('click', function(e){
 	this.classList.toggle('is-open');
@@ -14,8 +14,9 @@ item.addEventListener('click', function(e){
 	nav.classList.toggle('is-open');
 });
 
-enviar.addEventListener('click', function(e){
-	form.classList.toggle('clicado');
+cp.addEventListener('click', function(e){
+	cp.classList.toggle('clicado');
+	ia.classList.toggle('out');
 });
 
 function confirmar(url, msg){
