@@ -362,13 +362,32 @@ section{
 .ia.out{
 	display: none
 }
+.cp.clicado .imgCp{
+	display: none;
+}
 .cp.clicado .form{
 	display: block;
 }
 .form{
 	display: none;
 }
-
+.fa.icone {
+	z-index: 1000;
+	position: fixed;
+	bottom: 0;
+	left: 46.59%;
+	align-items: center;
+    font-size: 86px;
+    color: rgb(174, 0, 255);
+    opacity: 1;
+    animation: anima 1500ms ease infinite;
+}
+@keyframes anima {
+    to {
+        opacity: 0.1;
+        transform: scale(0.85) translateY(20px);
+    }
+}
 
 @media (min-aspect-ratio: 411/823) {
 	#mapa{
