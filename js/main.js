@@ -20,13 +20,6 @@ imgCp.addEventListener('click', function(e){
 	ia.classList.toggle('out');
 });
 
-seta.addEventListener("ForaSeta",
-function(e){
-	if($(this).scrollTop() >= $(document).height() - $(window).height() - $(window).scrollTop()){
-		seta.classList.toggle('bottom');
-	}
-}
-);
 
 function fechar(){
 	cp.classList.toggle('clicado');
@@ -41,36 +34,6 @@ function confirmar(url, msg){
 	}
 }
 
-//Coloca o botão em uma varivel
-var btn_subir = $(".botao-voltar-ao-topo");
-
-
-//Faz a primeira verificacao ao carregar a pagina
-$(document).ready(function(){
-    var minhaposicao = $(this).scrollTop();
-    if(minhaposicao >=100){
-        btn_subir.fadeIn();
-    }
-    else{
-        btn_subir.fadeOut();
-    }
-});
-
-//Fica monitorando a rolagem de pagina
-$(window).scroll(function(){
-    var minhaposicao = $(this).scrollTop();
-    
-    if(minhaposicao >=100){
-        btn_subir.fadeIn();
-    }
-    else{
-        btn_subir.fadeOut();
-    }
-});
-
-btn_subir.click(function(){
-    $('html,body').animate({scrollTop:0},500);
-})
 
 var NavWidth= 375;
 var NavHeight = 667;
