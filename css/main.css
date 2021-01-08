@@ -127,7 +127,7 @@
 	height: 4px;
 	margin: 0 auto;
 	right: 35px;
-	background: #5A3B5D;
+	background: #8d68a7;
 	transform: skew(5deg);
 	transition: all .275s;
 }
@@ -176,7 +176,7 @@
 	text-transform: uppercase;
 	font-weight: 500;
 	text-align: center;
-	color: #5A3B5D;
+	color: #8d68a7;
 }
 .device {
 	position: relative;
@@ -281,7 +281,7 @@ section{
 	left: 0;
 	width: 100%;
 }
-#skye2{
+#skye4{
 	position: absolute;
 	top: 150px;
 	right: 1px;
@@ -294,28 +294,32 @@ section{
 	position: absolute;
 	width: 65%;
 	left: 0;
-	top: 50vw;
+	top: 60vw;
 	z-index: 1;
 	animation: pulse 2s infinite;
 }
-
-#onde{
+#local{
 	position: absolute;
-	width: 70%;
-	right: 20px;
-	bottom: 5%;
-	z-index: 1;
 	animation: rotate 2s infinite;
+}
+#onde{
+	position: relative;
+	width: 70%;
+	z-index: 1;
+	bottom: -60vw;
+	left: 25vw;
+	
 }
 #mapa{
 	position: absolute;
-	bottom: 10.7%;
-	right: 236px;
 	z-index: 2;
-	width: 243px;
-	height: 141.5px;
-	animation: pulseMap 2s infinite;
+	width: 225px;
+	bottom: -48.3vw;
+	left: 46vw;
+	height: 135px;
+	
 }
+
 
 .footprint{
 	z-index: 0;
@@ -359,18 +363,71 @@ section{
 	align-self: center;
 	width: 40%;
 }
+.rsvpItens{
+	align-items: center;
+	position: absolute;
+}
+.skyeCp{
+	display: none;
+}
+#skye3{
+	position: absolute;
+	bottom: 64.5%;
+	left: 65%;
+	width: 40%;
+	z-index: 2;
+}
+#skye2{
+	position: absolute;
+	top: 53%;
+	left:-25%;
+	z-index: 2;
+}
+
+
+.btRsvp{
+	animation-name: bounceIn;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
 .ia.out{
 	display: none
 }
-.cp.clicado .imgCp{
+.cp.clicado{
+	animation-name: bounceIn;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.cp.clicado #imgCp{
 	display: none;
 }
 .cp.clicado .form{
+	
+	display: block;
+}
+.cp.clicado .skyeCp{
 	display: block;
 }
 .form{
 	display: none;
+	z-index: 1;
+	position: relative;
+	
 }
+.iconSeta {
+	display: none;
+	position: absolute;
+	width: 4%;
+	top: -8%;
+	left: 90%;
+	z-index: 1000;
+}
+ .cp.clicado .iconSeta{
+	 display: block;
+ } 
+
 .fa.icone {
 	z-index: 1000;
 	position: fixed;
@@ -378,7 +435,7 @@ section{
 	left: 46.59%;
 	align-items: center;
     font-size: 86px;
-    color: rgb(174, 0, 255);
+    color: #8d68a7;
     opacity: 1;
     animation: anima 1500ms ease infinite;
 }
@@ -390,42 +447,27 @@ section{
 }
 
 @media (min-aspect-ratio: 411/823) {
-	#mapa{
-		bottom: 11.3%;
-	}
+
 }
 
 @media (min-aspect-ratio: 1/2) {
-	#mapa{
-		bottom: 11.3%;
-	}
+
 }
 
 
 @media (min-aspect-ratio: 135/256) {
-	#mapa{
-		bottom: 11.53%;
-	}
+
+
 }
 @media (min-aspect-ratio: 9/16) {
-	#mapa{
-		bottom: 12.4%;
-	}
+
 }
 
 @media (min-aspect-ratio: 3/5) {
 	#quando{
 		width: 60%;
 	}
-	#onde{
-        width: 65%;
-	}
-	#mapa{
-		width: 230.85px;
-	    height: 134.425px;
-		bottom: 12.2%;
-		right: 215px;
-	}
+
 	#skye1{
 		width: 55%;
     }
@@ -435,15 +477,7 @@ section{
 	#quando{
 		width: 55%;
 	}
-	#onde{
-        width: 60%;
-	}
-	#mapa{
-		width: 219.3075px;
-	    height: 127.70px;
-		bottom: 11.9%;
-		right: 200px;
-	}
+	
 	#skye1{
 		width: 50%;
     }
@@ -452,15 +486,7 @@ section{
     #quando{
 		width: 52%;
 	}
-	#onde{
-        width: 57%;
-	}
-	#mapa{
-		width: 212.43px;
-	    height: 123.19px;
-		bottom: 11.9%;
-		right: 187px;
-	}
+
 	#skye1{
 		width: 50%;
     }
@@ -478,15 +504,7 @@ section{
 	#osso{
 		width: 90%;
 	}
-	#onde{
-        width: 50%;
-	}
-	#mapa{
-		width: 180px;
-	    height: 110px;
-		bottom: 11.9%;
-		right: 167px;
-	}
+
 	#skye1{
 		width: 50%;
     }
@@ -502,12 +520,7 @@ section{
     #convidado{
     	padding-bottom: 170px;
     }
-   #mapa{
-		width: 207px;
-		height: 126.5px;
-		bottom: 13.5%;
-		right: 203px;
-	}
+  
 	#quando{
 		left: 7vw;
 	    top: 40vw;
@@ -515,12 +528,7 @@ section{
 }
 
 @media (min-aspect-ratio: 1/1) {
-    #mapa{
-		width: 207px;
-	    height: 126.5px;
-		bottom: 13.8%;
-		right: 205px;
-	}
+   
 }
 
 @media (min-aspect-ratio: 6/5) {

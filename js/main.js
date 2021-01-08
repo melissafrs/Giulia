@@ -2,8 +2,8 @@ let burger = document.getElementById('burger'),
 	 nav    = document.getElementById('main-nav'),
 	 item = document.getElementById('itemMenu'),
 	 cp = document.getElementById('cp'),
-	 ia = document.getElementById('ia'),
-	 seta = document.getElementById('seta');
+	 imgCp = document.getElementById('imgCp'),
+	 ia = document.getElementById('ia');
 
 burger.addEventListener('click', function(e){
 	this.classList.toggle('is-open');
@@ -15,7 +15,7 @@ item.addEventListener('click', function(e){
 	nav.classList.toggle('is-open');
 });
 
-cp.addEventListener('click', function(e){
+imgCp.addEventListener('click', function(e){
 	cp.classList.toggle('clicado');
 	ia.classList.toggle('out');
 });
@@ -26,7 +26,12 @@ function(e){
 		seta.classList.toggle('bottom');
 	}
 }
-);    
+);
+
+function fechar(){
+	cp.classList.toggle('clicado');
+	ia.classList.toggle('out');
+}    
 function confirmar(url, msg){
 	
     event.preventDefault();  
@@ -35,8 +40,6 @@ function confirmar(url, msg){
         top.location.href = url;
 	}
 }
-
-
 
 //Coloca o botão em uma varivel
 var btn_subir = $(".botao-voltar-ao-topo");

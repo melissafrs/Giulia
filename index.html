@@ -60,7 +60,7 @@
                     <section id="infos">
                         <img id="osso" class= "logo" src="./img/osso.png">
                        
-                        <img id="skye2" class= "logo" src="./img/skye4.gif">
+                        <img id="skye4" class= "logo" src="./img/skye4.gif">
 
                         <nav id="data" class="data">
                             <a class="calendario" target="Calendar" onclick="confirmar('https://calendar.google.com/calendar/u/0/r/day/2021/1/31', 'Deseja marcar essa data na sua agenda Google?')" onmouseover="window.status='Confirmar';  return true;" onmouseout="window.status='';  return true;">
@@ -68,6 +68,7 @@
                         </nav>
 
                         <nav id="local" class="infos">
+                            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.4123927117653!2d-49.18309598438322!3d-25.457901583775516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcefdf97ece229%3A0x4204e1e5e4812b95!2sRua%20Rio%20Tocantins%2C%20719%20-%20Weiss%C3%B3polis%2C%20Pinhais%20-%20PR%2C%2083322-170!5e0!3m2!1spt-BR!2sbr!4v1608412381876!5m2!1spt-BR!2sbr"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             <img id="onde" onclick="confirmar('https://goo.gl/maps/VpZC1coUCnheEo3H9', 'Deseja abrir o Google Maps?')" src="./img/onde.png">
                         </nav>
                         
@@ -76,15 +77,19 @@
                     <section id="rsvp">
 
                         <img id="ccv" src="./img/Ccv.png">
-                        <nav id="cp" class="cp">
-                            
-                            <nav id="form" class="form">
-                                <iframe  src="./viewport.html" width="640" height="540" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                        <nav class="rsvpItens">
+                            <nav id="cp" class="cp">
+                                <img id="iconSeta" class="iconSeta" onclick="fechar()" src="./img/seta.png">
+                                <nav id="form" class="form">
+                                    <iframe  src="./viewport.html" width="640" height="540" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                                </nav>
+                                <img id="skye3" class="skyeCp" src="./img/skye3.gif">
+                                <img id="skye2" class="skyeCp" src="./img/skye2.gif">
+                                <img  id="imgCp" class="btRsvp" src="./img/cp.png">
                             </nav>
-                            <img  class="imgCp" src="./img/cp.png">
-                        </nav>
-                        <nav id="ia" class="ia">
-                            <img  src="./img/ia.png">
+                            <nav id="ia" class="ia">
+                                <img  class="btRsvp"  onclick="confirmar('https://api.whatsapp.com/send?phone=5541991491849&text=Infelizmente%20n%C3%A3o%20poderei%20comparecer%20no%20anivers%C3%A1rio%20da%20Giulia', 'Deseja enviar uma mensagem informando sua ausência?')" src="./img/ia.png">
+                            </nav>
                         </nav>
                         
                         <img id="responda" src="./img/rsvp.png">
