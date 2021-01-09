@@ -375,14 +375,14 @@ section{
 }
 #skye3{
 	position: absolute;
-	bottom: 64.5%;
+	bottom: 52.5%;
 	left: 65%;
-	width: 40%;
+	width: 45%;
 	z-index: 2;
 }
 #skye2{
 	position: absolute;
-	top: 53%;
+	top: 85%;
 	left:-25%;
 	z-index: 2;
 }
@@ -407,7 +407,6 @@ section{
 	display: none;
 }
 .cp.clicado .form{
-	
 	display: block;
 }
 .cp.clicado .skyeCp{
